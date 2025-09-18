@@ -1,4 +1,26 @@
-## Deep Search - Setup Guide
+# Deep Research
+This codebase is an AI-powered research automation tool that systematically clarifies, searches, synthesizes, evaluates, and reports on complex queries, using agent-based orchestration and external search APIs.
+
+### Key Functions and Workflow
+- Clarification Phase: The system can ask clarifying questions to better define ambiguous or broad queries, narrowing down the research scope.
+
+- Search Planning and Execution: Given a user query, a planner agent formulates a set of structured web search terms. These are executed using various search agents (OpenAI, Google Gemini, Google Custom Search) to collect relevant information.
+
+- Research Synthesis: Initial research results are gathered and, if necessary, further supplemental searches are conducted.
+
+- Report Writing: A writer agent takes the query and gathered research, generates a detailed report (in markdown format), and provides a short summary and follow-up research questions.
+
+- Evaluation and Optimization: An evaluator agent reviews the report for quality, clarity, and completeness, offering suggestions for improvement. An optimizer agent revises the report based on this feedback.
+
+- Output: The final report is detailed (targeting several pages and thousands of words), and can be optionally emailed or displayed via a simple Gradio UI.
+
+### Main Use Case
+- The software is designed for users (especially researchers or analysts) who need to perform deep, structured research on a topic, leveraging AI for planning, searching, synthesis, and review.
+- It supports integration with Jupyter notebooks and can be run via scripts or a web UI.
+- It is highly configurable via environment variables, supporting multiple APIs for AI and search.
+
+
+## Deep Rearch - Setup Guide
 
 ### Requirements
 - uv (Python package manager). Follow the instructions here to install uv https://docs.astral.sh/uv/getting-started/installation/
